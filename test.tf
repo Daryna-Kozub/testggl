@@ -5,7 +5,7 @@ provider "google" {
 // Create a new instance
 resource "google_compute_instance" "default" {
  //project      = "${google_project_services.project.project}"
- zone         = "us-west1-a"
+ zone         = "europe-west1"
  name         = "${var.vm_name}"
  machine_type = "f1-micro"
  boot_disk {
