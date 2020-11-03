@@ -1,6 +1,6 @@
 // Configure the Google Cloud provider
 provider "google" {
-  region      = "us-west1"
+  region      = "europe-west1"
 }
 // Create a new instance
 resource "google_compute_instance" "default" {
