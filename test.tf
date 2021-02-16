@@ -1,11 +1,11 @@
-// Configure the Google Cloud provider
 provider "google" {
-  region      = "europe-west1"
+  region      = "us-west1"
 }
+
 // Create a new instance
 resource "google_compute_instance" "default" {
  //project      = "${google_project_services.project.project}"
- zone         = "europe-west1-b"
+ zone         = "us-west1-a"
  name         = "${var.vm_name}"
  machine_type = "f1-micro"
  boot_disk {
