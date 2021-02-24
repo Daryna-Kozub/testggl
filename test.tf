@@ -1,3 +1,4 @@
+// Configure the Google Cloud provider
 provider "google" {
   region      = "europe-west1"
 }
@@ -20,9 +21,11 @@ resource "google_compute_instance" "default" {
    }
  }
 }
+
 variable "vm_name" {
-  description = "Name for VM to be created for ggl test"
+  description = "Name for VM to be created"
 }
+
 output "instance_id" {
  value = "${google_compute_instance.default.self_link}"
 }
