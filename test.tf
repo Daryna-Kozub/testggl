@@ -21,7 +21,7 @@ resource "google_compute_instance" "default" {
  }
 }
 variable "vm_name" {
-  description = "Name for VM to be created for ggl"
+  description = "Name for VM to be created for ggl test"
 }
 output "instance_id" {
  value = "${google_compute_instance.default.self_link}"
