@@ -2,7 +2,6 @@
 provider "google" {
   region      = "europe-west1"
 }
-
 // Create a new instance
 resource "google_compute_instance" "default" {
  //project      = "${google_project_services.project.project}"
@@ -21,11 +20,11 @@ resource "google_compute_instance" "default" {
    }
  }
 }
-
 variable "vm_name" {
   description = "Name for VM to be created"
 }
-
 output "instance_id" {
  value = "${google_compute_instance.default.self_link}"
 }
+
+
