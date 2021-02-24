@@ -1,11 +1,11 @@
 provider "google" {
-  region      = "eu-west1"
+  region      = "europe-west1"
 }
 
 // Create a new instance
 resource "google_compute_instance" "default" {
  //project      = "${google_project_services.project.project}"
- zone         = "eu-west1"
+ zone         = "europe-west1-b"
  name         = "${var.vm_name}"
  machine_type = "f1-micro"
  boot_disk {
